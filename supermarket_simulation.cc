@@ -427,7 +427,7 @@ void SupermarketSimulation::PrintResults()
     results.efficiencyScore = efficiencyScore;
     allResults.push_back(results);
    
-    std::cout << "\n=== Results for " << m_numCashiers << " cashiers ===" << std::endl;
+    std::cout << "\nResults for " << m_numCashiers << " cashiers" << std::endl;
     std::cout << "Total customers served: " << m_completedCustomers.size() << std::endl;
     std::cout << "Average waiting time: " << std::fixed << std::setprecision(2) << avgWaitingTime << " seconds" << std::endl;
     std::cout << "System utilization: " << std::fixed << std::setprecision(1) << utilization * 100 << "%" << std::endl;
@@ -679,7 +679,7 @@ int main(int argc, char *argv[])
        
         if (optimalResult != nullptr)
         {
-            std::cout << "\n=== RECOMMENDATION ===" << std::endl;
+            std::cout << "\nRECOMMENDATION" << std::endl;
             std::cout << "Optimal number of cashiers: " << optimalCashiers << std::endl;
             std::cout << "For " << expectedCustomers << " expected customers:" << std::endl;
             std::cout << "  - Average waiting time: " << std::fixed << std::setprecision(2)
